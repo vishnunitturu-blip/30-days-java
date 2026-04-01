@@ -1,0 +1,103 @@
+Day 1 — Introduction to Java + First Program
+1. What is Java
+
+Java is a high-level programming language used to build:
+
+Android apps
+Web applications
+Enterprise software
+
+Big companies like Amazon and Netflix use Java in backend systems.
+
+Two important properties:
+
+• Platform independent – write once, run anywhere
+• Object-oriented language
+
+Example:
+You write code on Windows → it runs on Linux or Mac.
+
+2. Java Program Structure
+
+Every Java program follows this structure.
+
+Example 1
+
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+
+Example 2
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.println("Welcome Vishnu");
+    }
+}
+
+Explanation:
+
+public class Hello
+→ Class name.
+
+main()
+→ Starting point of the program.
+
+System.out.println()
+→ Prints output.
+
+3. Output Statement
+
+System.out.println() prints text on screen.
+
+Example 1
+
+System.out.println("Hello");
+
+Output
+
+Hello
+
+Example 2
+
+System.out.println("I am learning Java");
+
+Output
+
+I am learning Java
+4. Rules of Java
+
+Important rules beginners miss:
+
+File name must match class name
+Java is case sensitive
+
+Wrong
+
+system.out.println("Hello");
+
+Correct
+
+System.out.println("Hello");
+5. Your Practice (Do This Now)
+
+Write these 3 programs.
+
+Program 1
+
+Hello World
+
+Program 2
+
+My name is Vishnu
+I am learning Java
+
+Program 3
+
+Welcome to Java Programming
+Your Task
+Open IntelliJ IDEA or Visual Studio Code
+Create a Java file
+Run the program

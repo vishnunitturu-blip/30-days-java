@@ -1,0 +1,108 @@
+ Variables + Data Types
+
+This is where real programming starts. If you don’t understand this properly, everything later (arrays, OOP, DSA) will confuse you.
+
+1. What is a Variable?
+
+A variable is just a container that stores data.
+
+Example 1
+
+int age = 20;
+
+Example 2
+
+String name = "Vishnu";
+
+Here:
+
+age stores a number
+name stores text
+2. Data Types in Java
+
+Java is strictly typed. You must define the type before storing data.
+
+Main types:
+Type	Meaning	Example
+int	integer	10, 100
+double	decimal	10.5
+char	single character	'A'
+String	text	"Hello"
+boolean	true/false	true
+3. Examples
+
+Example 1
+
+int a = 10;
+double b = 5.5;
+
+System.out.println(a);
+System.out.println(b);
+
+Example 2
+
+char grade = 'A';
+boolean isPass = true;
+
+System.out.println(grade);
+System.out.println(isPass);
+4. Combining Variables
+
+Example 1
+
+int a = 10;
+int b = 20;
+
+System.out.println(a + b);
+
+Example 2
+
+String name = "Vishnu";
+int age = 20;
+
+System.out.println("Name: " + name);
+System.out.println("Age: " + age);
+5. Important Mistakes Beginners Make
+
+Mistake 1 — Forgetting quotes
+
+String name = Vishnu;   // WRONG
+
+Correct
+
+String name = "Vishnu";
+
+Mistake 2 — Using wrong type
+
+int price = 10.5;   // WRONG
+
+Correct
+
+double price = 10.5;
+6. Your Practice (Mandatory)
+
+Write these 5 programs:
+
+Program 1
+
+Store your name and age and print it
+
+Program 2
+
+Store two numbers and print their sum
+
+Program 3
+
+Store a character and print it
+
+Program 4
+
+Store a decimal value and print it
+
+Program 5
+
+Print:
+
+Name: Vishnu
+Age: 20
+Marks: 85.5

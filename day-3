@@ -1,0 +1,158 @@
+Day 3 — Operators + User Input
+1. Operators in Java
+
+Operators are used to perform operations on variables.
+
+(A) Arithmetic Operators
+Operator	Meaning
++	Addition
+-	Subtraction
+*	Multiplication
+/	Division
+%	Modulus (remainder)
+Example 1
+int a = 10;
+int b = 3;
+
+System.out.println(a + b);  // 13
+System.out.println(a - b);  // 7
+System.out.println(a * b);  // 30
+System.out.println(a / b);  // 3
+System.out.println(a % b);  // 1
+Example 2
+double x = 5.5;
+double y = 2.0;
+
+System.out.println(x / y);  // 2.75
+(B) Relational Operators
+
+Used for comparison → result is true/false
+
+Operator	Meaning
+==	equal
+!=	not equal
+>	greater
+<	less
+>=	greater or equal
+<=	less or equal
+Example 1
+int a = 10;
+int b = 20;
+
+System.out.println(a > b);   // false
+System.out.println(a < b);   // true
+Example 2
+System.out.println(10 == 10);  // true
+System.out.println(5 != 3);    // true
+(C) Logical Operators
+
+Used to combine conditions
+
+Operator	Meaning
+&&	AND
+	
+!	NOT
+Example 1
+int age = 20;
+
+System.out.println(age > 18 && age < 25); // true
+Example 2
+int marks = 40;
+
+System.out.println(marks > 35 || marks == 35); // true
+2. Taking Input from User
+
+This is where your program becomes interactive.
+
+Use:
+Scanner
+
+Example 1 — Integer input
+import java.util.Scanner;
+
+public class InputDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int age = sc.nextInt();
+
+        System.out.println("Age is " + age);
+    }
+}
+Example 2 — String input
+import java.util.Scanner;
+
+public class InputDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String name = sc.nextLine();
+
+        System.out.println("Name is " + name);
+    }
+}
+3. Combine Everything
+Example 1
+import java.util.Scanner;
+
+public class Sum {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println("Sum = " + (a + b));
+    }
+}
+Example 2
+import java.util.Scanner;
+
+public class Compare {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println(a > b);
+    }
+}
+4. Common Mistakes (You WILL do these)
+
+Mistake 1 — Forgetting import
+
+Scanner sc = new Scanner(System.in); // ERROR
+
+Fix:
+
+import java.util.Scanner;
+
+Mistake 2 — Mixing nextInt and nextLine wrongly
+(You’ll face this later, don’t panic)
+
+5. Your Practice (Mandatory)
+
+Write these 5 programs:
+
+Program 1
+
+Take 2 numbers and print sum
+
+Program 2
+
+Take a number and print square
+
+Program 3
+
+Take age and check if >18
+
+Program 4
+
+Take 2 numbers and print largest
+
+Program 5
+
+Take name and print:
+
+Hello Vishnu

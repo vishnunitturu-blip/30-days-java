@@ -1,0 +1,171 @@
+Day 5 — switch + Logic Control
+1. What is switch?
+
+switch is used when you have multiple fixed choices instead of many if-else.
+
+👉 Cleaner than if-else when checking a single variable
+
+2. Basic Syntax
+
+Example 1
+
+int day = 3;
+
+switch(day){
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    default:
+        System.out.println("Invalid day");
+}
+
+Example 2
+
+char grade = 'A';
+
+switch(grade){
+    case 'A':
+        System.out.println("Excellent");
+        break;
+    case 'B':
+        System.out.println("Good");
+        break;
+    default:
+        System.out.println("Average");
+}
+3. Important Concept — break
+
+If you forget break, execution continues (called fall-through).
+
+Example 1 (Wrong)
+
+int n = 1;
+
+switch(n){
+    case 1:
+        System.out.println("One");
+    case 2:
+        System.out.println("Two");
+}
+
+Output:
+
+One
+Two
+
+Example 2 (Correct)
+
+switch(n){
+    case 1:
+        System.out.println("One");
+        break;
+    case 2:
+        System.out.println("Two");
+        break;
+}
+4. When to Use switch vs if-else
+
+Use switch when:
+
+Fixed values (1,2,3… or A,B,C)
+
+Use if-else when:
+
+Conditions (>, <, ranges)
+
+Example Comparison
+
+Example 1 (if-else)
+
+if(marks >= 90){
+    System.out.println("A");
+}
+
+Example 2 (switch)
+
+int day = 2;
+switch(day){
+    case 2:
+        System.out.println("Tuesday");
+}
+5. Input + Switch
+
+Example 1
+
+import java.util.Scanner;
+
+public class Menu {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int choice = sc.nextInt();
+
+        switch(choice){
+            case 1:
+                System.out.println("Tea");
+                break;
+            case 2:
+                System.out.println("Coffee");
+                break;
+            default:
+                System.out.println("Invalid");
+        }
+    }
+}
+
+Example 2
+
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        char op = sc.next().charAt(0);
+
+        switch(op){
+            case '+':
+                System.out.println(a + b);
+                break;
+            case '-':
+                System.out.println(a - b);
+                break;
+            default:
+                System.out.println("Invalid operator");
+        }
+    }
+}
+6. Your Practice (Mandatory)
+
+Write these 5 programs:
+
+Program 1
+
+Print day name using number (1–7)
+
+Program 2
+
+Simple calculator using switch (+, -, *, /)
+
+Program 3
+
+Input a character and print vowel or consonant
+
+Program 4
+
+Menu-driven program:
+
+1. Add
+2. Subtract
+3. Exit
+Program 5
+
+Print month name using number (1–12)

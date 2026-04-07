@@ -1,0 +1,120 @@
+. Why Loops?
+
+Without loops, you write this:
+
+System.out.println(1);
+System.out.println(2);
+System.out.println(3);
+
+That’s stupid and inefficient.
+
+Loops let you repeat work automatically.
+
+2. Syntax of for loop
+for(initialization; condition; update){
+    // code
+}
+3. Basic Examples
+Example 1 — Print 1 to 5
+for(int i = 1; i <= 5; i++){
+    System.out.println(i);
+}
+Example 2 — Print 10 to 1
+for(int i = 10; i >= 1; i--){
+    System.out.println(i);
+}
+4. How it Works (Understand this properly)
+for(int i = 1; i <= 5; i++)
+
+Step-by-step:
+
+i = 1
+Check i <= 5 → true
+Run code
+i++ → i becomes 2
+Repeat
+
+Stops when condition becomes false.
+
+5. Using Loop with Logic
+Example 1 — Even numbers
+for(int i = 1; i <= 10; i++){
+    if(i % 2 == 0){
+        System.out.println(i);
+    }
+}
+Example 2 — Sum of numbers
+int sum = 0;
+
+for(int i = 1; i <= 5; i++){
+    sum = sum + i;
+}
+
+System.out.println(sum);
+6. Common Mistakes
+Mistake 1 — Infinite loop
+for(int i = 1; i <= 5; i--){
+    System.out.println(i); // NEVER ends
+}
+Mistake 2 — Wrong condition
+for(int i = 1; i >= 5; i++){
+    System.out.println(i); // NEVER runs
+}
+7. Nested Loops (Important for patterns later)
+Example 1
+for(int i = 1; i <= 3; i++){
+    for(int j = 1; j <= 3; j++){
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+
+Output:
+
+* * *
+* * *
+* * *
+Example 2
+for(int i = 1; i <= 3; i++){
+    for(int j = 1; j <= i; j++){
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+
+Output:
+
+*
+* *
+* * *
+8. Your Practice (Mandatory)
+
+Write these 6 programs:
+
+Program 1
+
+Print numbers 1 to 100
+
+Program 2
+
+Print even numbers from 1 to 50
+
+Program 3
+
+Find sum of first 10 numbers
+
+Program 4
+
+Print multiplication table of a number
+
+Program 5
+
+Print:
+
+*
+* *
+* * *
+* * * *
+Program 6
+
+Reverse counting (100 to 1)

@@ -1,0 +1,140 @@
+Day 8 — Pattern Problems (Logic Building)
+
+Patterns are not about printing stars.
+They train your brain to think in loops + conditions.
+
+1. Basic Pattern
+Example 1
+*
+* *
+* * *
+* * * *
+
+Code:
+
+for(int i = 1; i <= 4; i++){
+    for(int j = 1; j <= i; j++){
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+Example 2
+1
+1 2
+1 2 3
+1 2 3 4
+
+Code:
+
+for(int i = 1; i <= 4; i++){
+    for(int j = 1; j <= i; j++){
+        System.out.print(j + " ");
+    }
+    System.out.println();
+}
+2. Reverse Pattern
+Example 1
+* * * *
+* * *
+* *
+*
+
+Code:
+
+for(int i = 4; i >= 1; i--){
+    for(int j = 1; j <= i; j++){
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+Example 2
+4 3 2 1
+3 2 1
+2 1
+1
+
+Code:
+
+for(int i = 4; i >= 1; i--){
+    for(int j = i; j >= 1; j--){
+        System.out.print(j + " ");
+    }
+    System.out.println();
+}
+3. Key Logic (Understand this or quit now)
+
+Every pattern has:
+
+Outer loop → rows
+Inner loop → columns
+
+Example:
+
+for(int i = 1; i <= 4; i++)   // rows
+for(int j = 1; j <= i; j++)   // columns
+
+👉 If you don’t understand this, you will fail pattern problems.
+
+4. Slightly Advanced Pattern
+Example 1
+1
+2 2
+3 3 3
+4 4 4 4
+
+Code:
+
+for(int i = 1; i <= 4; i++){
+    for(int j = 1; j <= i; j++){
+        System.out.print(i + " ");
+    }
+    System.out.println();
+}
+Example 2
+A
+A B
+A B C
+A B C D
+
+Code:
+
+for(int i = 1; i <= 4; i++){
+    for(char ch = 'A'; ch < 'A' + i; ch++){
+        System.out.print(ch + " ");
+    }
+    System.out.println();
+}
+5. Your Practice (Mandatory)
+
+Write these 6 patterns:
+
+Pattern 1
+*
+* *
+* * *
+* * * *
+Pattern 2
+1
+2 3
+4 5 6
+7 8 9 10
+Pattern 3
+* * * *
+* * *
+* *
+*
+Pattern 4
+1
+1 1
+1 1 1
+1 1 1 1
+Pattern 5
+A
+B B
+C C C
+D D D D
+Pattern 6 (Important)
+1
+2 1
+3 2 1
+4 3 2 1

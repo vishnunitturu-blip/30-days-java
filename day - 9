@@ -1,0 +1,140 @@
+Day 8 (Upgrade) — Advanced Pattern Logic
+
+Now we go one level deeper.
+This is where your brain either improves or gets stuck.
+
+1. Right-Aligned Triangle
+Output
+      *
+    * *
+  * * *
+* * * *
+Example 1 (Core Logic)
+for(int i = 1; i <= 4; i++){
+    for(int space = 1; space <= 4 - i; space++){
+        System.out.print("  ");
+    }
+    for(int j = 1; j <= i; j++){
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+Example 2 (Numbers)
+      1
+    1 2
+  1 2 3
+1 2 3 4
+for(int i = 1; i <= 4; i++){
+    for(int space = 1; space <= 4 - i; space++){
+        System.out.print("  ");
+    }
+    for(int j = 1; j <= i; j++){
+        System.out.print(j + " ");
+    }
+    System.out.println();
+}
+2. Pyramid Pattern (Important)
+Output
+   *
+  * *
+ * * *
+* * * *
+Example 1
+for(int i = 1; i <= 4; i++){
+    for(int space = 1; space <= 4 - i; space++){
+        System.out.print(" ");
+    }
+    for(int j = 1; j <= i; j++){
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+Example 2 (Reverse Pyramid)
+* * * *
+ * * *
+  * *
+   *
+for(int i = 4; i >= 1; i--){
+    for(int space = 1; space <= 4 - i; space++){
+        System.out.print(" ");
+    }
+    for(int j = 1; j <= i; j++){
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+3. Number Pyramid (Brain Test)
+Output
+   1
+  1 2
+ 1 2 3
+1 2 3 4
+Example 1
+for(int i = 1; i <= 4; i++){
+    for(int space = 1; space <= 4 - i; space++){
+        System.out.print(" ");
+    }
+    for(int j = 1; j <= i; j++){
+        System.out.print(j + " ");
+    }
+    System.out.println();
+}
+Example 2 (Reverse Numbers)
+   1
+  2 1
+ 3 2 1
+4 3 2 1
+for(int i = 1; i <= 4; i++){
+    for(int space = 1; space <= 4 - i; space++){
+        System.out.print(" ");
+    }
+    for(int j = i; j >= 1; j--){
+        System.out.print(j + " ");
+    }
+    System.out.println();
+}
+4. Core Logic (Don’t skip this)
+
+Every complex pattern = combination of 3 things:
+
+Spaces
+Rows
+Columns
+
+If you can’t break a pattern into these → you’re guessing, not coding.
+
+5. Your Practice (Serious Level)
+
+Write these 5 patterns:
+
+Pattern 1
+    *
+   ***
+  *****
+ *******
+Pattern 2
+*******
+ *****
+  ***
+   *
+Pattern 3
+1
+2 3
+4 5 6
+7 8 9 10
+Pattern 4
+A
+B C
+D E F
+G H I J
+Pattern 5 (Hard)
+1
+0 1
+1 0 1
+0 1 0 1
+Brutal Truth
+
+If you struggle here:
+
+Good → your brain is growing
+Easy → you’re

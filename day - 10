@@ -1,0 +1,194 @@
+Number Logic + Problem Solving
+
+No more printing stars blindly.
+Now you solve real problems using logic + loops + conditions.
+
+1. Reverse a Number
+Example
+
+Input: 1234
+Output: 4321
+
+Example 1
+int num = 1234;
+int rev = 0;
+
+while(num > 0){
+    int digit = num % 10;
+    rev = rev * 10 + digit;
+    num = num / 10;
+}
+
+System.out.println(rev);
+Example 2 (with input)
+import java.util.Scanner;
+
+Scanner sc = new Scanner(System.in);
+int num = sc.nextInt();
+int rev = 0;
+
+while(num > 0){
+    int digit = num % 10;
+    rev = rev * 10 + digit;
+    num = num / 10;
+}
+
+System.out.println("Reverse: " + rev);
+2. Count Digits
+Example
+
+Input: 56789 → Output: 5
+
+Example 1
+int num = 56789;
+int count = 0;
+
+while(num > 0){
+    count++;
+    num = num / 10;
+}
+
+System.out.println(count);
+Example 2
+int num = 1000;
+int count = 0;
+
+while(num != 0){
+    count++;
+    num = num / 10;
+}
+
+System.out.println(count);
+3. Palindrome Number
+
+Same forward and backward.
+
+Example: 121, 1331
+
+Example 1
+int num = 121;
+int original = num;
+int rev = 0;
+
+while(num > 0){
+    int digit = num % 10;
+    rev = rev * 10 + digit;
+    num = num / 10;
+}
+
+if(original == rev){
+    System.out.println("Palindrome");
+} else {
+    System.out.println("Not Palindrome");
+}
+Example 2
+int num = 123;
+int temp = num;
+int rev = 0;
+
+while(temp > 0){
+    int digit = temp % 10;
+    rev = rev * 10 + digit;
+    temp = temp / 10;
+}
+
+System.out.println(num == rev);
+4. Armstrong Number
+
+Example: 153
+
+👉 1³ + 5³ + 3³ = 153
+
+Example 1
+int num = 153;
+int sum = 0;
+int temp = num;
+
+while(temp > 0){
+    int digit = temp % 10;
+    sum = sum + (digit * digit * digit);
+    temp = temp / 10;
+}
+
+if(sum == num){
+    System.out.println("Armstrong");
+} else {
+    System.out.println("Not Armstrong");
+}
+Example 2
+int num = 370;
+int temp = num;
+int sum = 0;
+
+while(temp != 0){
+    int digit = temp % 10;
+    sum += digit * digit * digit;
+    temp /= 10;
+}
+
+System.out.println(sum == num);
+5. Sum of Digits
+Example
+
+Input: 1234 → Output: 10
+
+Example 1
+int num = 1234;
+int sum = 0;
+
+while(num > 0){
+    sum += num % 10;
+    num /= 10;
+}
+
+System.out.println(sum);
+Example 2
+int num = 999;
+int sum = 0;
+
+while(num != 0){
+    int digit = num % 10;
+    sum += digit;
+    num /= 10;
+}
+
+System.out.println(sum);
+6. Your Practice (Mandatory)
+
+Write these 6 programs:
+
+Program 1
+
+Reverse a number
+
+Program 2
+
+Count digits
+
+Program 3
+
+Check palindrome
+
+Program 4
+
+Sum of digits
+
+Program 5
+
+Check Armstrong number
+
+Program 6 (Important)
+
+Find largest digit in a number
+
+Core Pattern (Memorize this logic)
+
+Most number problems follow this:
+
+while(num > 0){
+    int digit = num % 10;
+    // logic
+    num = num / 10;
+}
+
+If you understand this → you can solve many problems.

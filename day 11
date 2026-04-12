@@ -1,0 +1,133 @@
+Day 11 — Functions (Methods)
+
+Until now, you wrote everything inside main().
+That’s messy and not how real developers write code.
+
+👉 Functions help you reuse code + organize logic
+
+1. What is a Function?
+
+A function (method in Java) is a block of code that performs a task.
+
+Example 1
+public class Test {
+    public static void sayHello(){
+        System.out.println("Hello Vishnu");
+    }
+
+    public static void main(String[] args){
+        sayHello();
+    }
+}
+Example 2
+public class Test {
+    public static void printNumbers(){
+        for(int i = 1; i <= 5; i++){
+            System.out.println(i);
+        }
+    }
+
+    public static void main(String[] args){
+        printNumbers();
+    }
+}
+2. Function with Parameters
+
+You can pass values to a function.
+
+Example 1
+public class Test {
+    public static void add(int a, int b){
+        System.out.println(a + b);
+    }
+
+    public static void main(String[] args){
+        add(10, 20);
+    }
+}
+Example 2
+public class Test {
+    public static void greet(String name){
+        System.out.println("Hello " + name);
+    }
+
+    public static void main(String[] args){
+        greet("Vishnu");
+    }
+}
+3. Function with Return Value
+
+Instead of printing, return the result.
+
+Example 1
+public class Test {
+    public static int add(int a, int b){
+        return a + b;
+    }
+
+    public static void main(String[] args){
+        int result = add(5, 3);
+        System.out.println(result);
+    }
+}
+Example 2
+public class Test {
+    public static int square(int n){
+        return n * n;
+    }
+
+    public static void main(String[] args){
+        System.out.println(square(4));
+    }
+}
+4. Why Functions Matter (Don’t ignore this)
+
+Without functions:
+
+Code becomes huge
+Hard to debug
+Repetition everywhere
+
+With functions:
+
+Clean code
+Reusable logic
+Easy debugging
+5. Common Mistakes
+Mistake 1 — Forgetting return
+public static int add(int a, int b){
+    a + b;   // WRONG
+}
+Mistake 2 — Calling function incorrectly
+add;  // WRONG
+
+Correct:
+
+add(10, 20);
+6. Your Practice (Mandatory)
+
+Write these 6 programs using functions:
+
+Program 1
+
+Function to add two numbers
+
+Program 2
+
+Function to check even/odd
+
+Program 3
+
+Function to find factorial
+
+Program 4
+
+Function to check palindrome
+
+Program 5
+
+Function to find largest of 3 numbers
+
+Program 6 (Important)
+
+Function to check prime number
